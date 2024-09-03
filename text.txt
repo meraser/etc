@@ -1,0 +1,16 @@
+Dear Martin.
+
+Hello, I am an administor of webOS TV betaprogram.
+
+First of all, thank you for your interest in the webOS TV beta program.
+Please check our response to your inquiry below
+
+(Question)
+I waited 10+ minutes and the screensaver no longer starts after two minutes on the Home Screen or in apps. It only activates the slide show the the inputs has no signal or when manually putting the TV in standby. Please fix this ASAP!!
+
+(Answer)
+The screen saver operation time in webOS24 has been changed to the default 30 minutes. 
+Therefore if Beta program(webOS Re:New Program) is applied, it will run with the changed spec.
+
+Thanks
+From  Administor of webOS TV beta program
