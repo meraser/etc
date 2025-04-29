@@ -1,0 +1,37 @@
+n,m=map(int,input().split())#no of tree, needed tree len
+height_tree=list(map(int,input().split()))
+# height_tree.sort()#오름차순 정렬
+
+def check_height(height, tar,arr):#톱기계의 높이, 필요한 나무 길이, 나무들의 길이
+    sum=0
+    for i in arr:
+        if i>height:
+            sum=sum+(i-height)
+    
+    if sum>=tar: 
+        return 1#길이 만족하거나 더 큼
+    else: 
+        return 0#길이 만족 못함
+
+def BS(tar,arr):#필요한 나무 길이, 주어진 나무들의 길이
+    s=0
+    e=max(arr)
+    sol=0
+    while s<=e:
+        mid=(s+e)//2
+        if check_height(mid, tar, arr):
+            sol=mid
+            s=mid+1
+        else:
+            e=mid-1
+    if sol:
+        return sol
+    else: return -1
+    
+print(BS(m,height_tree))
+            
+            
+    
+    
+    
+    
