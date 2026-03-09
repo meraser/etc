@@ -1,0 +1,9 @@
+TV에 설치된 YouTube 앱을 삭제합니다.
+TV 터미널에서 아래 명령을 실행해서 개발자 모드를 활성화합니다. (TV가 리부팅 됨)
+touch /var/luna/preferences/devmode_enabled; sync; reboot
+TV가 리부팅된 후 TV 터미널에서 아래 명령 실행해서 개발자 모드용 YouTube 앱을 설치합니다.
+cd /home/root
+wget http://gp03.lge.com/tftpboot/o24/ytb_25_dev.ipk
+luna-send -i luna://com.webos.appInstallService/dev/install '{"id":"youtube.leanback.v4","ipkUrl":"/home/root/ytb_25_dev.ipk","subscribe":true}'
+터미널에 출력되는 메시지에서 "state" 부분이 "installed" 로 바뀌면 Ctrl-C 키를 눌러서 쉘 프롬프트로 돌아옵니다.
+홈 메뉴에서 YouTube 앱 아이콘을 찾아 실행하고, 터미널에서 쇼츠 OOM 이슈 재현 스크립트 실행합니다.
