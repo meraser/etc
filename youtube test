@@ -14,3 +14,6 @@ luna-send -i luna://com.webos.appInstallService/dev/install '{"id":"youtube.lean
 {"statusValue":269,"details":{"modifiedTime":"","unpackFileSize":"0","permissionLevel":"","installBasePath":"/media/developer","receivedSize":"0","appType":"","updateType":"","verified":false,"progress":100,"downgrade":true,"totalSize":"0","pkgType":"","packageId":"","ipkFile":"/home/root/ytb_25_dev.ipk","paused":false,"simpleStatus":"install","state":"ipk verifying","client":"com.webos.lunasend-7312","update":false},"id":"youtube.leanback.v4"}
 {"statusValue":24,"details":{"modifiedTime":"","unpackFileSize":"0","permissionLevel":"","installBasePath":"/media/developer","receivedSize":"0","appType":"","updateType":"","verified":false,"progress":100,"downgrade":true,"totalSize":"0","errorCode":-5,"pkgType":"","packageId":"","ipkFile":"/home/root/ytb_25_dev.ipk","paused":false,"simpleStatus":"install","state":"install failed","client":"com.webos.lunasend-7312","reason":"IPK Extraction Failure","update":false},"id":"youtube.leanback.v4"}
 {"methodName":"install","returnValue":false,"errorCode":-1,"errorText":"install has been disconnected."}
+
+
+Connecting to gp03.lge.com (10.186.119.48:80)
